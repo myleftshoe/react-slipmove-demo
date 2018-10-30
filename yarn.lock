@@ -7569,7 +7569,7 @@ react-dev-utils@^6.0.5:
     strip-ansi "4.0.0"
     text-table "0.2.0"
 
-react-dom@16.6.0:
+react-dom@^16.6.0:
   version "16.6.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.6.0.tgz#6375b8391e019a632a89a0988bce85f0cc87a92f"
   integrity sha512-Stm2D9dXEUUAQdvpvhvFj/DEXwC2PAL/RwEMhoN4dvvD2ikTlJegEXf97xryg88VIAU22ZAP7n842l+9BTz6+w==
@@ -7583,6 +7583,11 @@ react-error-overlay@^5.0.5:
   version "5.0.5"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-5.0.5.tgz#716ff1a92fda76bb89a39adf9ce046a5d740e71a"
   integrity sha512-ab0HWBgxdIsngHtMGU8+8gYFdTBXpUGd4AE4lN2VZvOIlBmWx9dtaWEViihuGSIGosCKPeHCnzFoRWB42UtnLg==
+
+react-flip-move@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/react-flip-move/-/react-flip-move-3.0.3.tgz#3065b0b9e622ae73953aba725f8feed8e4643667"
+  integrity sha512-gR2jvjUgIXI7ceFWJkr8owX4vKhV0IJoXIf/Dt7gESFe5OKiSz2H6d10mKTW8fN134NDI16J4HgEgq9pKqJd5A==
 
 react-scripts@2.0.5:
   version "2.0.5"
@@ -7638,7 +7643,22 @@ react-scripts@2.0.5:
   optionalDependencies:
     fsevents "1.2.4"
 
-react@16.6.0:
+react-slipmove@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-slipmove/-/react-slipmove-1.0.0.tgz#5678bb172b32df7345f4e7c74a8b3f4bacaa45e6"
+  integrity sha512-jpDXZL1IqoN/9johmqfjPnQ0gjC1RdkbtwPZmN40awb5zNUAzclQpZGebONt9uqDzqYwbQuV4PYUSmhknYBzWg==
+  dependencies:
+    react-flip-move "^3.0.3"
+
+react-slipmove@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/react-slipmove/-/react-slipmove-1.0.4.tgz#6381dd4b6fd98c084c4839f2cda11215c7a43bfc"
+  integrity sha512-5zZOrjL5X8Ch8mpoVpTDzcN6RIEnc8kKdx8whfmEk4amnQz+RZnUCTTvHsFlip3Jkm2cVrLjJkMtyY57dQTaFQ==
+  dependencies:
+    react-flip-move "^3.0.3"
+    react-slipmove "1.0.0"
+
+react@^16.6.0:
   version "16.6.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.6.0.tgz#b34761cfaf3e30f5508bc732fb4736730b7da246"
   integrity sha512-zJPnx/jKtuOEXCbQ9BKaxDMxR0001/hzxXwYxG8septeyYGfsgAei6NgfbVgOhbY1WOP2o3VPs/E9HaN+9hV3Q==

@@ -1,32 +1,31 @@
-.App {
-  text-align: center;
+body {
+  touch-action: pan-y; /* allow vertical scroll but prevent swipe to go back in msEdge */
+  background-color: cadetblue;
+  font-family: Roboto
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+/* not required - in SlipMove instead */
+.list {
+  position: relative; /* Required by react-flip-move - uncomment it to see console warning */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.list-item {
+  position: relative; /* ensures that item is above all others in chrome */
+  height: 50px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: center;  
+  background-color: white;
+  border: 1px solid rgba(0,0,0,.125);
+  margin-bottom: 2px;
+  margin-top: 2px;
+  user-select: none;
+  will-change: transform;
 }
 
-.App-link {
-  color: #61dafb;
+.slipmove-dragging {
+  background-color: orange;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
