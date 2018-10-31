@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/react-slipmove-demo/precache-manifest.28abda907498a13274bd8dbea5effdef.js"
+  "/react-slipmove-demo/precache-manifest.241510a1e9e4a7a2105b74ad815329c6.js"
 );
 
 workbox.clientsClaim();
